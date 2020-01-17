@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <title>用户登录</title>
+
+    <link href="/static/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <center>
+        <h4>欢迎来到主页</h4>
+        <button type="button" id="myButtonDatasource" data-loading-text="Easyui" class="btn btn-primary" autocomplete="off">
+            多数据源
+        </button>
+
+        <button type="button" id="myButtonCRUD" data-loading-text="Bootstrap" class="btn btn-primary"
+                autocomplete="off">
+            曾删改查
+        </button>
+
+        <button type="button" id="myButtonMySystem" data-loading-text="Bootstrap" class="btn btn-primary"
+                autocomplete="off">
+            MySystem
+        </button>
+
+        <button type="button" id="myButtonadminlte" data-loading-text="Bootstrap" class="btn btn-primary"
+                autocomplete="off">
+            adminlte
+        </button>
+
+        <button type="button" id="myButtonlayui" data-loading-text="Bootstrap" class="btn btn-primary" autocomplete="off">
+            layui
+        </button>
+
+        <button type="button" id="myButtonVueJs" data-loading-text="Bootstrap" class="btn btn-primary" autocomplete="off">
+            Vue.js
+        </button>
+    </center>
+
+</body>
+<script>
+    $('#myButtonDatasource').click(function () {
+        // window.location.href = "http://localhost:8087/datasource";     //在当前窗口中打开窗口
+        window.open("http://localhost:8087/datasource");
+    })
+    $('#myButtonCRUD').click(function () {
+        window.location.href = "http://localhost:8087/select";     //在当前窗口中打开窗口
+    })
+
+    $('#myButtonMySystem').click(function () {
+        window.location.href = "http://localhost:8087/mySystem";     //在当前窗口中打开窗口
+    })
+    $('#myButtonadminlte').click(function () {
+        window.location.href = "http://localhost:8087/adminlte";     //在当前窗口中打开窗口
+    })
+    $('#myButtonlayui').click(function () {
+        window.location.href = "http://localhost:8087/layui";     //在当前窗口中打开窗口
+    })
+    $('#myButtonVueJs').click(function () {
+        window.location.href = "http://localhost:8087/vuejs";     //在当前窗口中打开窗口
+    })
+</script>
+</html>
